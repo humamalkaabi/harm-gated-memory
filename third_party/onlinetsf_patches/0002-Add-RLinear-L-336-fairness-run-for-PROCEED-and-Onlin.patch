@@ -1,0 +1,44 @@
+From 188e83096330d091e3b697f60fbb89eeb9c37945 Mon Sep 17 00:00:00 2001
+From: Humam Alkaabi <humamalkaabi@users.noreply.github.com>
+Date: Thu, 12 Nov 2026 21:59:24 +0300
+Subject: [PATCH 2/4] Add RLinear (L=336) fairness run for PROCEED and Online
+ on ETTh1
+
+---
+ run_rlinear.sh | 11 +++++++++++
+ settings.py    |  1 +
+ 2 files changed, 12 insertions(+)
+ create mode 100755 run_rlinear.sh
+
+diff --git a/run_rlinear.sh b/run_rlinear.sh
+new file mode 100755
+index 0000000..92cb3bb
+--- /dev/null
++++ b/run_rlinear.sh
+@@ -0,0 +1,11 @@
++#!/bin/bash
++# Fairness check: PROCEED and Online-GD with the SAME backbone family and lookback as ours (RLinear, L = 336), ETTh1 H24
++cd "$(dirname "$0")"; mkdir -p preds
++python -u run.py --dataset ETTh1 --border_type online --model RLinear --seq_len 336 --pred_len 24 --itr 1 --only_test \
++  --pin_gpu False --reduce_bs False --save_opt --learning_rate 0.003 > logs/online/RLinear_ETTh1_24_pre.log 2>&1
++SAVE_PRED=preds/ETTh1_24_RL_Online.npz python -u run.py --dataset ETTh1 --border_type online --model RLinear --seq_len 336 --pred_len 24 \
++  --itr 1 --online_method Online --pretrain --pin_gpu False --reduce_bs False --save_opt --only_test --online_learning_rate 0.00001 > logs/online/RLinear_ETTh1_24_Online.log 2>&1
++SAVE_PRED=preds/ETTh1_24_RL_Proceed.npz python -u run.py --dataset ETTh1 --border_type online --batch_size 16 --model RLinear --seq_len 336 --pred_len 24 \
++  --tune_mode down_up --val_online_lr --diff_online_lr --itr 1 --pretrain --save_opt --online_method Proceed --bottleneck_dim 32 --concept_dim 50 \
++  --online_learning_rate 0.00003 --learning_rate 0.003 --lradj type3 --pin_gpu False > logs/online/RLinear_ETTh1_24_Proceed.log 2>&1
++grep -h "Best Valid\|mse:\|Error" logs/online/RLinear_ETTh1_24_*.log; echo RL_DONE
+diff --git a/settings.py b/settings.py
+index a13a2dc..44abc91 100644
+--- a/settings.py
++++ b/settings.py
+@@ -141,6 +141,7 @@ def get_hyperparams(data, model, args, reduce_bs=True):
+ 
+ 
+ pretrain_lr_online_dict = {
++     'RLinear': {'ETTh1': 0.003, 'ETTh2': 0.003, 'ETTm1': 0.003, 'Weather': 0.003, 'ECL': 0.003},
+      'TCN': {'ECL': 0.003, 'ETTh2': 0.003, 'ETTm1': 0.001, 'Weather': 0.001, 'Traffic': 0.003},
+      'TCN_RevIN': {'ETTh1': 0.003, 'ECL': 0.003, 'ETTh2': 0.001, 'ETTm1': 0.0001, 'Weather': 0.001, 'Traffic': 0.003},
+      'TCN_Ensemble': {'ECL': 0.003, 'ETTh2': 0.003, 'ETTm1': 0.0003, 'Weather': 0.001, 'Traffic': 0.003},
+-- 
+2.43.0
+

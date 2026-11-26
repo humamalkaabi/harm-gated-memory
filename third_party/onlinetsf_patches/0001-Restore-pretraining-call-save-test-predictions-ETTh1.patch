@@ -1,0 +1,93 @@
+From 3fb0dde21952445225932c87f6a4c8a26da878bb Mon Sep 17 00:00:00 2001
+From: Humam Alkaabi <humamalkaabi@users.noreply.github.com>
+Date: Thu, 12 Nov 2026 21:22:15 +0300
+Subject: [PATCH 1/4] Restore pretraining call, save test predictions, ETTh1
+ TCN settings
+
+---
+ exp/exp_online.py |  6 ++++++
+ run.py            |  4 ++--
+ run_etth1.sh      | 11 +++++++++++
+ settings.py       |  2 +-
+ 4 files changed, 20 insertions(+), 3 deletions(-)
+ create mode 100755 run_etth1.sh
+
+diff --git a/exp/exp_online.py b/exp/exp_online.py
+index fa2f274..5c83dc0 100644
+--- a/exp/exp_online.py
++++ b/exp/exp_online.py
+@@ -167,6 +167,7 @@ class Exp_Online(Exp_Main):
+ 
+         if phase == 'test' or show_progress:
+             online_loader = tqdm(online_loader, mininterval=10)
++        _sp, _st = [], []
+         for i, (recent_data, current_data) in enumerate(online_loader):
+             self.model.train()
+             loss, _ = self._update_online(recent_data, criterion, model_optim, scaler)
+@@ -179,6 +180,9 @@ class Exp_Online(Exp_Main):
+                         outputs = outputs[0]
+                     predictions.append(outputs.detach().cpu().numpy())
+                 update_metrics(outputs, current_data[self.label_position].to(self.device), statistics, target_variate)
++                if phase == 'test' and os.environ.get('SAVE_PRED'):
++                    o_ = outputs[0] if isinstance(outputs, (tuple, list)) else outputs
++                    _sp.append(o_.detach().cpu().numpy()); _st.append(current_data[self.label_position].cpu().numpy())
+ 
+                 if phase == 'test' and hasattr(self.args, 'debug') and self.args.debug:
+                     if isinstance(outputs, (tuple, list)):
+@@ -192,6 +196,8 @@ class Exp_Online(Exp_Main):
+ 
+         metrics = calculate_metrics(statistics)
+         mse, mae = metrics['MSE'], metrics['MAE']
++        if phase == 'test' and os.environ.get('SAVE_PRED') and _sp:
++            np.savez_compressed(os.environ['SAVE_PRED'], pred=np.concatenate(_sp), true=np.concatenate(_st))
+         if phase == 'test':
+             print('mse:{}, mae:{}'.format(mse, mae))
+         if self.args.do_predict:
+diff --git a/run.py b/run.py
+index b4a11e9..aec6cbb 100644
+--- a/run.py
++++ b/run.py
+@@ -436,8 +436,8 @@ if __name__ == '__main__':
+                 print('Learning rate of model_optim is', exp.model_optim.param_groups[0]['lr'])
+             else:
+                 print('>>>>>>>start training : {}>>>>>>>>>>>>>>>>>>>>>>>>>>'.format(setting))
+-                # _, train_data, train_loader, vali_data, vali_loader = exp.train(setting, train_data, train_loader,
+-                #                                                                 vali_data, vali_loader)
++                _, train_data, train_loader, vali_data, vali_loader = exp.train(setting, train_data, train_loader,
++                                                                                vali_data, vali_loader)
+                 torch.cuda.empty_cache()
+ 
+         if args.online_learning_rate is not None and not isinstance(exp, Exp_SOLID):
+diff --git a/run_etth1.sh b/run_etth1.sh
+new file mode 100755
+index 0000000..7b6524a
+--- /dev/null
++++ b/run_etth1.sh
+@@ -0,0 +1,11 @@
++#!/bin/bash
++# ETTh1 H24, TCN-RevIN backbone (attention-free): Online (GD) and Proceed, predictions saved for the plug-in study
++cd "$(dirname "$0")"; mkdir -p preds
++until [ -f checkpoints/ETTh1_60_24_TCN_RevIN_online_ftM_sl60_ll48_pl24_lr0.003_dm512_nh8_el2_dl1_df2048_fc3_ebtimeF_dtTrue_test_0/checkpoint.pth ] && ! pgrep -f "pred_len 24 --itr 1 --only_test" >/dev/null; do sleep 30; done
++SAVE_PRED=preds/ETTh1_24_Online.npz python -u run.py --dataset ETTh1 --border_type online --model TCN --normalization RevIN \
++  --seq_len 60 --pred_len 24 --itr 1 --online_method Online --pretrain --pin_gpu False --reduce_bs False --save_opt --only_test \
++  --online_learning_rate 0.00001 > logs/online/TCN_ETTh1_24_Online.log 2>&1
++SAVE_PRED=preds/ETTh1_24_Proceed.npz python -u run.py --dataset ETTh1 --border_type online --batch_size 16 --model TCN --normalization RevIN \
++  --seq_len 60 --pred_len 24 --tune_mode down_up --val_online_lr --diff_online_lr --itr 1 --pretrain --save_opt --online_method Proceed \
++  --bottleneck_dim 32 --concept_dim 50 --online_learning_rate 0.00003 --learning_rate 0.003 --lradj type3 --pin_gpu False > logs/online/TCN_ETTh1_24_Proceed.log 2>&1
++grep -h "mse:" logs/online/TCN_ETTh1_24_Online.log logs/online/TCN_ETTh1_24_Proceed.log; echo RUN_DONE
+diff --git a/settings.py b/settings.py
+index 870df98..a13a2dc 100644
+--- a/settings.py
++++ b/settings.py
+@@ -142,7 +142,7 @@ def get_hyperparams(data, model, args, reduce_bs=True):
+ 
+ pretrain_lr_online_dict = {
+      'TCN': {'ECL': 0.003, 'ETTh2': 0.003, 'ETTm1': 0.001, 'Weather': 0.001, 'Traffic': 0.003},
+-     'TCN_RevIN': {'ECL': 0.003, 'ETTh2': 0.001, 'ETTm1': 0.0001, 'Weather': 0.001, 'Traffic': 0.003},
++     'TCN_RevIN': {'ETTh1': 0.003, 'ECL': 0.003, 'ETTh2': 0.001, 'ETTm1': 0.0001, 'Weather': 0.001, 'Traffic': 0.003},
+      'TCN_Ensemble': {'ECL': 0.003, 'ETTh2': 0.003, 'ETTm1': 0.0003, 'Weather': 0.001, 'Traffic': 0.003},
+      'FSNet_RevIN': {'ECL': 0.003, 'ETTh2': 0.003, 'ETTm1': 0.001, 'Weather': 0.003, 'Traffic': 0.003},
+     'GPT4TS': {'ETTh2': 0.0001, 'ETTm1': 0.0001, 'Traffic': 0.001, 'Weather': 0.0001, 'ECL': 0.0001},
+-- 
+2.43.0
+

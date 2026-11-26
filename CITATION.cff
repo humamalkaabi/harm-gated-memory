@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper."
+title: "Change Is Not Harm: Surprise, Risk and Adaptation Utility in Test-Time Memory for Online Forecasting"
+authors:
+  - family-names: Alkaabi
+    given-names: Humam
+license: MIT
+repository-code: "https://github.com/humamalkaabi/harm-gated-memory"
