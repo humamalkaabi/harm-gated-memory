@@ -2,7 +2,7 @@ import json, os, shutil, sys
 
 DROP = ()
 SKIP_DIRS = ("policies", "logs", "tables", "figures")
-SKIP_FILES = ("label_variants_mac.txt", "rebuild_report.txt", "rebuild_bundle.zip")
+SKIP_FILES = ("label_variants_mac.txt", "rebuild_report.txt", "rebuild_bundle.zip", "tcpd_v2.json", "tcpd.txt")
 
 
 def unwanted(name):

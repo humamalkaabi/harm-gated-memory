@@ -6,6 +6,9 @@ from hgm.monitors.labels import auroc
 P = 5; rng = np.random.default_rng(0); d = 16
 R1 = rng.standard_normal((d, P)); R2 = rng.standard_normal((d, P))
 ann = json.load(open(HP.TCPD + "/annotations.json"))
+SERIES = ("children_per_woman", "co2_canada", "global_co2", "homeruns", "jfk_passengers", "lga_passengers", "nile",
+          "quality_control_1", "quality_control_2", "quality_control_3", "quality_control_4", "seatbelts",
+          "uk_coal_employ", "unemployment_nl", "us_population", "well_log")
 
 
 def signals(y):
@@ -33,6 +36,7 @@ def signals(y):
 rows = []
 for f in sorted(glob.glob(HP.TCPD + "/datasets/*/*.json")):
     D = json.load(open(f)); name = D["name"]
+    if name not in SERIES: continue
     if D["n_obs"] < 100 or D["n_dim"] != 1: continue
     y = np.array([np.nan if v is None else v for v in D["series"][0]["raw"]], float)
     if np.isnan(y).any(): y = np.interp(np.arange(len(y)), np.flatnonzero(~np.isnan(y)), y[~np.isnan(y)])
