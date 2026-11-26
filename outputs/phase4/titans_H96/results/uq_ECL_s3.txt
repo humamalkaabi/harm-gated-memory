@@ -1,0 +1,8 @@
+
+ECL H96 s3: target coverage 90 %
+  method     cover  cover@harm  width/split  winkler
+  split      0.888  0.752       1.000       3.794
+  risk       0.902  0.818       1.304       2.353
+  split_aci  0.897  0.827       1.073       3.654
+  risk_aci   0.900  0.858       1.726       2.825
+  bayes      0.906  0.815       1.284       2.327

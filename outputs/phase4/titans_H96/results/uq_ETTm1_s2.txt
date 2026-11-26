@@ -1,0 +1,8 @@
+
+ETTm1 H96 s2: target coverage 90 %
+  method     cover  cover@harm  width/split  winkler
+  split      0.856  0.718       1.000       4.106
+  risk       0.898  0.802       1.328       3.524
+  split_aci  0.899  0.815       1.405       3.728
+  risk_aci   0.901  0.836       1.792       4.341
+  bayes      0.899  0.794       1.266       3.512

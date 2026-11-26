@@ -1,0 +1,156 @@
+{
+ "data": "ETTm2",
+ "seed": 3,
+ "H6": {
+  "pred": {
+   "P-A W24": {
+    "auroc": 0.5059999823570251,
+    "auroc_ci90": [
+     0.494,
+     0.517
+    ],
+    "rho": 0.01,
+    "rho_ci90": [
+     -0.014,
+     0.033
+    ],
+    "tost": true
+   },
+   "P-A W168": {
+    "auroc": 0.5,
+    "auroc_ci90": [
+     0.481,
+     0.521
+    ],
+    "rho": -0.003,
+    "rho_ci90": [
+     -0.045,
+     0.041
+    ],
+    "tost": true
+   },
+   "P-B W24": {
+    "auroc": 0.4970000088214874,
+    "auroc_ci90": [
+     0.486,
+     0.508
+    ],
+    "rho": -0.003,
+    "rho_ci90": [
+     -0.024,
+     0.017
+    ],
+    "tost": true
+   },
+   "P-B W168": {
+    "auroc": 0.515999972820282,
+    "auroc_ci90": [
+     0.497,
+     0.535
+    ],
+    "rho": 0.027,
+    "rho_ci90": [
+     -0.014,
+     0.067
+    ],
+    "tost": true
+   },
+   "P-C W24": {
+    "auroc": 0.5270000100135803,
+    "auroc_ci90": [
+     0.514,
+     0.538
+    ],
+    "rho": 0.052,
+    "rho_ci90": [
+     0.025,
+     0.078
+    ],
+    "tost": true
+   },
+   "P-C W168": {
+    "auroc": 0.5429999828338623,
+    "auroc_ci90": [
+     0.523,
+     0.562
+    ],
+    "rho": 0.086,
+    "rho_ci90": [
+     0.044,
+     0.128
+    ],
+    "tost": false
+   }
+  },
+  "gates": {
+   "bayes_sw(P,A)": {
+    "improvement_pct": -4.52,
+    "upper95_pct": -1.17,
+    "supported": true
+   },
+   "bayes_mix(P,A)": {
+    "improvement_pct": -2.69,
+    "upper95_pct": -0.38,
+    "supported": true
+   },
+   "lcb(P,A)": {
+    "improvement_pct": -3.84,
+    "upper95_pct": -1.1,
+    "supported": true
+   },
+   "hedge(P,A)": {
+    "improvement_pct": -3.72,
+    "upper95_pct": -1.31,
+    "supported": true
+   },
+   "bayes_sw(P,B)": {
+    "improvement_pct": -5.66,
+    "upper95_pct": -1.54,
+    "supported": true
+   },
+   "bayes_mix(P,B)": {
+    "improvement_pct": -3.19,
+    "upper95_pct": -0.39,
+    "supported": true
+   },
+   "lcb(P,B)": {
+    "improvement_pct": -5.27,
+    "upper95_pct": -1.57,
+    "supported": true
+   },
+   "hedge(P,B)": {
+    "improvement_pct": -5.65,
+    "upper95_pct": -2.13,
+    "supported": true
+   },
+   "bayes_sw(P,C)": {
+    "improvement_pct": -3.49,
+    "upper95_pct": 0.73,
+    "supported": false
+   },
+   "bayes_mix(P,C)": {
+    "improvement_pct": -3.11,
+    "upper95_pct": -0.22,
+    "supported": true
+   },
+   "lcb(P,C)": {
+    "improvement_pct": -2.09,
+    "upper95_pct": 1.5,
+    "supported": false
+   },
+   "hedge(P,C)": {
+    "improvement_pct": -3.55,
+    "upper95_pct": 0.37,
+    "supported": true
+   }
+  }
+ },
+ "H7": {
+  "cov_gain": 0.019,
+  "cov_gain_lower95": 0.009,
+  "winkler_ratio": 1.0082999467849731,
+  "winkler_upper95": 1.0252,
+  "coverage_ok": true,
+  "width_ok": true
+ }
+}

@@ -1,0 +1,61 @@
+{
+ "data": "Traffic",
+ "seed": 2,
+ "H": 24,
+ "pairs": {
+  "P_A": {
+   "spearman_risk_utility_median": -0.287,
+   "spearman_risk_utility_iqr": [
+    -0.382,
+    -0.187
+   ],
+   "utility_at_harm_minus_other_median": -0.00257,
+   "share_variates_utility_higher_at_harm": 0.435,
+   "mse_rel_to_P_pct": {
+    "P": 0.0,
+    "X": 4.711,
+    "avg": 0.523,
+    "v_gate": -0.044,
+    "harm_trigger": 2.74,
+    "deployable_static": 0.0,
+    "best_static_hindsight": 0.0
+   }
+  },
+  "P_B": {
+   "spearman_risk_utility_median": -0.248,
+   "spearman_risk_utility_iqr": [
+    -0.344,
+    -0.15
+   ],
+   "utility_at_harm_minus_other_median": 0.00051,
+   "share_variates_utility_higher_at_harm": 0.517,
+   "mse_rel_to_P_pct": {
+    "P": 0.0,
+    "X": 3.744,
+    "avg": 0.002,
+    "v_gate": -0.355,
+    "harm_trigger": 2.187,
+    "deployable_static": 0.002,
+    "best_static_hindsight": 0.0
+   }
+  },
+  "P_C": {
+   "spearman_risk_utility_median": -0.225,
+   "spearman_risk_utility_iqr": [
+    -0.327,
+    -0.116
+   ],
+   "utility_at_harm_minus_other_median": -0.00035,
+   "share_variates_utility_higher_at_harm": 0.491,
+   "mse_rel_to_P_pct": {
+    "P": 0.0,
+    "X": 4.094,
+    "avg": -0.012,
+    "v_gate": -0.419,
+    "harm_trigger": 2.504,
+    "deployable_static": -0.012,
+    "best_static_hindsight": -0.012
+   }
+  }
+ }
+}

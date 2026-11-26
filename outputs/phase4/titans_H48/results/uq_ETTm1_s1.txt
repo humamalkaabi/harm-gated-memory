@@ -1,0 +1,8 @@
+
+ETTm1 H48 s1: target coverage 90 %
+  method     cover  cover@harm  width/split  winkler
+  split      0.852  0.751       1.000       3.784
+  risk       0.895  0.825       1.325       3.208
+  split_aci  0.900  0.832       1.400       3.358
+  risk_aci   0.901  0.844       1.659       3.725
+  bayes      0.903  0.827       1.310       3.201

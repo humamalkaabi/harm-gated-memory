@@ -1,0 +1,270 @@
+{
+ "h1": {
+  "runs": 19,
+  "surprise": {
+   "auroc": [
+    0.44,
+    0.541
+   ],
+   "spearman": [
+    -0.037,
+    0.079
+   ],
+   "runs": 15,
+   "datasets": 6,
+   "p": 0.0156,
+   "onset": [
+    0.432,
+    0.572
+   ]
+  },
+  "surprise_week": {
+   "auroc": [
+    0.403,
+    0.645
+   ],
+   "spearman": [
+    -0.077,
+    0.111
+   ],
+   "runs": 11,
+   "datasets": 5,
+   "p": 0.1094,
+   "onset": [
+    0.403,
+    0.631
+   ]
+  },
+  "surprise_max": {
+   "auroc": [
+    0.454,
+    0.542
+   ],
+   "spearman": [
+    0.007,
+    0.041
+   ],
+   "runs": 16,
+   "datasets": 6,
+   "p": 0.0156,
+   "onset": [
+    0.444,
+    0.561
+   ]
+  },
+  "surprise_mom": {
+   "auroc": [
+    0.44,
+    0.535
+   ],
+   "spearman": [
+    -0.056,
+    0.072
+   ],
+   "runs": 15,
+   "datasets": 6,
+   "p": 0.0156,
+   "onset": [
+    0.434,
+    0.563
+   ]
+  },
+  "deep_surprise": {
+   "auroc": [
+    0.442,
+    0.576
+   ],
+   "spearman": [
+    -0.032,
+    0.093
+   ],
+   "runs": 16,
+   "datasets": 6,
+   "p": 0.0156,
+   "onset": [
+    0.442,
+    0.566
+   ]
+  },
+  "deep_mom": {
+   "auroc": [
+    0.456,
+    0.585
+   ],
+   "spearman": [
+    -0.095,
+    0.086
+   ],
+   "runs": 17,
+   "datasets": 6,
+   "p": 0.0156,
+   "onset": [
+    0.442,
+    0.56
+   ]
+  },
+  "novelty": {
+   "auroc": [
+    0.393,
+    0.549
+   ],
+   "spearman": [
+    -0.146,
+    0.132
+   ],
+   "runs": 19,
+   "datasets": 6,
+   "p": 0.0156,
+   "onset": [
+    0.395,
+    0.492
+   ]
+  },
+  "target_mem": {
+   "auroc": [
+    0.421,
+    0.54
+   ],
+   "spearman": [
+    -0.014,
+    0.157
+   ],
+   "runs": 15,
+   "datasets": 6,
+   "p": 0.0156,
+   "onset": [
+    0.378,
+    0.531
+   ]
+  },
+  "err_day": {
+   "auroc": [
+    0.571,
+    0.764
+   ],
+   "spearman": [
+    0.27,
+    0.434
+   ],
+   "runs": 12,
+   "datasets": 5,
+   "p": 0.1094,
+   "onset": [
+    0.554,
+    0.686
+   ]
+  },
+  "holm": {
+   "surprise": 13,
+   "err_day": 14,
+   "novelty": 19
+  },
+  "onset_runs": {
+   "surprise": 16,
+   "err_day": 16,
+   "novelty": 19
+  },
+  "n_onsets": [
+   49,
+   54,
+   8016,
+   46,
+   73,
+   3511,
+   132,
+   135,
+   74,
+   56,
+   3508,
+   3467,
+   72,
+   139,
+   50,
+   8018,
+   54,
+   54,
+   8013
+  ]
+ },
+ "h2": {
+  "pairs": 57,
+  "runs": 19,
+  "rho_median": -0.182,
+  "rho_range": [
+   -0.418,
+   0.318
+  ],
+  "rho_nonpositive": 46,
+  "trigger_minus_best_median_pp": 3.36,
+  "trigger_worse_than_P": 41,
+  "vgate_minus_best_median_pp": 0.57,
+  "vgate_beats_best_by_gt_0.5pp": 2,
+  "vgate_best_gain_pp": 0.73,
+  "deployable_minus_best_median_pp": 0.03,
+  "deployable_max_loss_pp": 35.78
+ },
+ "h3": {
+  "runs": 19,
+  "equal_width_gain_median": -0.0036,
+  "equal_width_gain_positive": 9,
+  "equal_width_gain_week_positive": 9,
+  "winkler_vs_width_matched_median": 1.005,
+  "winkler_vs_width_matched_below1": 5,
+  "risk_pid_minus_pid_scorecaster_median": 0.0081,
+  "risk_pid_gt_pid_scorecaster": 19,
+  "median_split": {
+   "cover": 0.8458,
+   "cover_h3_168": 0.741,
+   "cover_h1_week": 0.7694,
+   "winkler": 3.2681
+  },
+  "median_risk_only": {
+   "cover": 0.8931,
+   "cover_h3_168": 0.8502,
+   "cover_h1_week": 0.8581,
+   "winkler": 2.7926
+  },
+  "median_bayes": {
+   "cover": 0.9068,
+   "cover_h3_168": 0.8519,
+   "cover_h1_week": 0.8764,
+   "winkler": 2.784
+  },
+  "median_aci": {
+   "cover": 0.8991,
+   "cover_h3_168": 0.8336,
+   "cover_h1_week": 0.8686,
+   "winkler": 2.9287
+  },
+  "median_risk_aci": {
+   "cover": 0.9,
+   "cover_h3_168": 0.8645,
+   "cover_h1_week": 0.874,
+   "winkler": 3.05
+  },
+  "median_aci_width_matched": {
+   "cover": 0.9176,
+   "cover_h3_168": 0.8797,
+   "cover_h1_week": 0.8843,
+   "winkler": 2.944
+  },
+  "median_pid": {
+   "cover": 0.9,
+   "cover_h3_168": 0.862,
+   "cover_h1_week": 0.8776,
+   "winkler": 3.1176
+  },
+  "median_pid_scorecaster": {
+   "cover": 0.9,
+   "cover_h3_168": 0.8666,
+   "cover_h1_week": 0.8779,
+   "winkler": 3.159
+  },
+  "median_risk_pid": {
+   "cover": 0.9,
+   "cover_h3_168": 0.8711,
+   "cover_h1_week": 0.8823,
+   "winkler": 3.4497
+  }
+ }
+}

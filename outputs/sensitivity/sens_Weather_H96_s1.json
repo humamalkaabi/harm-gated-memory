@@ -1,0 +1,317 @@
+{
+ "data": "Weather",
+ "seed": 1,
+ "H": 96,
+ "multiscale": {
+  "label_1d": {
+   "1d": 0.7244,
+   "3d": 0.7693,
+   "7d": 0.7913,
+   "14d": 0.7517,
+   "28d": 0.7469,
+   "mean_of_scales": 0.7791,
+   "max_of_scales": 0.7625
+  },
+  "label_7d": {
+   "1d": 0.6873,
+   "3d": 0.7285,
+   "7d": 0.7387,
+   "14d": 0.7248,
+   "28d": 0.7464,
+   "mean_of_scales": 0.7529,
+   "max_of_scales": 0.7373
+  },
+  "label_28d": {
+   "1d": 0.5965,
+   "3d": 0.6503,
+   "7d": 0.7116,
+   "14d": 0.6974,
+   "28d": 0.7552,
+   "mean_of_scales": 0.7318,
+   "max_of_scales": 0.6812
+  }
+ },
+ "pareto": {
+  "risk^0": {
+   "cover": 0.8666836909437968,
+   "cover_harm": 0.6803681084484076,
+   "width": 1.0,
+   "winkler": 4.8591975486738095,
+   "winkler_vs_aci": 0.9995312385611127,
+   "pareto": false
+  },
+  "risk^0+aci0.001": {
+   "cover": 0.9028096612011434,
+   "cover_harm": 0.7567403554399653,
+   "width": 1.1570782498424923,
+   "winkler": 4.460264682769775,
+   "winkler_vs_aci": 0.9174712157763587,
+   "pareto": false
+  },
+  "risk^0+aci0.005": {
+   "cover": 0.9004561587574099,
+   "cover_harm": 0.7745932410675583,
+   "width": 1.3133759955100595,
+   "winkler": 4.861476421356201,
+   "winkler_vs_aci": 1.0,
+   "pareto": false
+  },
+  "risk^0+aci0.02": {
+   "cover": 0.8999158050529562,
+   "cover_harm": 0.7988652548145396,
+   "width": 1.7148393076105746,
+   "winkler": 5.824697971343994,
+   "winkler_vs_aci": 1.19813354349646,
+   "pareto": true
+  },
+  "risk^0.25": {
+   "cover": 0.8794907369558477,
+   "cover_harm": 0.7029214915268232,
+   "width": 1.0050584495437012,
+   "winkler": 4.585549944772567,
+   "winkler_vs_aci": 0.9432422472787271,
+   "pareto": false
+  },
+  "risk^0.25+aci0.001": {
+   "cover": 0.9020233238532084,
+   "cover_harm": 0.7640537597787272,
+   "width": 1.2069967686587184,
+   "winkler": 4.569254398345947,
+   "winkler_vs_aci": 0.9398902724846019,
+   "pareto": false
+  },
+  "risk^0.25+aci0.005": {
+   "cover": 0.900257180905641,
+   "cover_harm": 0.7843426837575082,
+   "width": 1.4844496517009746,
+   "winkler": 5.2883782386779785,
+   "winkler_vs_aci": 1.0878132032989856,
+   "pareto": false
+  },
+  "risk^0.25+aci0.02": {
+   "cover": 0.8999540754834306,
+   "cover_harm": 0.8112558569158049,
+   "width": 1.9306540100849272,
+   "winkler": 6.353429794311523,
+   "winkler_vs_aci": 1.3068930595654547,
+   "pareto": true
+  },
+  "risk^0.5": {
+   "cover": 0.890837261536251,
+   "cover_harm": 0.7279767065040147,
+   "width": 1.0364444857213209,
+   "winkler": 4.39421621549146,
+   "winkler_vs_aci": 0.9038851234962094,
+   "pareto": true
+  },
+  "risk^0.5+aci0.001": {
+   "cover": 0.9012075417573493,
+   "cover_harm": 0.7708244318533656,
+   "width": 1.3571242902533593,
+   "winkler": 4.961030960083008,
+   "winkler_vs_aci": 1.0204782518926696,
+   "pareto": false
+  },
+  "risk^0.5+aci0.005": {
+   "cover": 0.9000298163556104,
+   "cover_harm": 0.7918457283216711,
+   "width": 1.9476085994576169,
+   "winkler": 6.486860752105713,
+   "winkler_vs_aci": 1.334339651141634,
+   "pareto": false
+  },
+  "risk^0.5+aci0.02": {
+   "cover": 0.8999611205458173,
+   "cover_harm": 0.8260615982413771,
+   "width": 2.556857830956098,
+   "winkler": 7.972997188568115,
+   "winkler_vs_aci": 1.6400361736906042,
+   "pareto": true
+  },
+  "risk^0.75": {
+   "cover": 0.8992552852935433,
+   "cover_harm": 0.7545989689764072,
+   "width": 1.0950514466003152,
+   "winkler": 4.314431220319139,
+   "winkler_vs_aci": 0.8874734435337539,
+   "pareto": true
+  },
+  "risk^0.75+aci0.001": {
+   "cover": 0.9005511896813629,
+   "cover_harm": 0.7762502064111297,
+   "width": 1.5408153552594999,
+   "winkler": 5.4420881271362305,
+   "winkler_vs_aci": 1.1194311471365845,
+   "pareto": false
+  },
+  "risk^0.75+aci0.005": {
+   "cover": 0.8998731862964298,
+   "cover_harm": 0.7979914907011786,
+   "width": 3.0278100411676374,
+   "winkler": 9.30666446685791,
+   "winkler_vs_aci": 1.914369969167029,
+   "pareto": false
+  },
+  "risk^0.75+aci0.02": {
+   "cover": 0.8999924620413071,
+   "cover_harm": 0.8327289357442154,
+   "width": 4.1493351728979295,
+   "winkler": 12.152505874633789,
+   "winkler_vs_aci": 2.4997562101193154,
+   "pareto": false
+  },
+  "risk^1.0": {
+   "cover": 0.9035282446615459,
+   "cover_harm": 0.7804878269036266,
+   "width": 1.186435457776673,
+   "winkler": 4.389234283704017,
+   "winkler_vs_aci": 0.9028603459686341,
+   "pareto": true
+  },
+  "risk^1.0+aci0.001": {
+   "cover": 0.8997135627308871,
+   "cover_harm": 0.7822307108799307,
+   "width": 1.6434125896184775,
+   "winkler": 5.716075897216797,
+   "winkler_vs_aci": 1.1757901102032269,
+   "pareto": false
+  },
+  "risk^1.0+aci0.005": {
+   "cover": 0.8996744406994648,
+   "cover_harm": 0.8018672466819411,
+   "width": 5.6535314598178905,
+   "winkler": 16.218347549438477,
+   "winkler_vs_aci": 3.336095075601346,
+   "pareto": false
+  },
+  "risk^1.0+aci0.02": {
+   "cover": 0.9000139198045839,
+   "cover_harm": 0.8359667523272855,
+   "width": 8.551020331709445,
+   "winkler": 23.743316650390625,
+   "winkler_vs_aci": 4.883972396963097,
+   "pareto": false
+  },
+  "risk_floor": {
+   "cover": 0.9167582266716049,
+   "cover_harm": 0.7848362643713749,
+   "width": 1.2144074932860716,
+   "winkler": 4.415049502447082,
+   "winkler_vs_aci": 0.9081705061968438,
+   "pareto": true
+  },
+  "risk_floor+aci0.005": {
+   "cover": 0.9001914527961208,
+   "cover_harm": 0.7972485396412574,
+   "width": 2.820165180797294,
+   "winkler": 8.781134605407715,
+   "winkler_vs_aci": 1.8062690928279872,
+   "pareto": false
+  },
+  "pid0.01": {
+   "cover": 0.9000814414373125,
+   "cover_harm": 0.7772870353169443,
+   "width": 1.2766282211225344,
+   "winkler": 4.72533233657687,
+   "winkler_vs_aci": 0.9719953213840024,
+   "pareto": false
+  },
+  "risk+pid0.01": {
+   "cover": 0.9000320872914713,
+   "cover_harm": 0.8063664932813177,
+   "width": 2.1037689403391666,
+   "winkler": 6.790823396120889,
+   "winkler_vs_aci": 1.396864410632369,
+   "pareto": false
+  },
+  "pid0.05": {
+   "cover": 0.9001222924767198,
+   "cover_harm": 0.8535812331000887,
+   "width": 3.62306109319954,
+   "winkler": 10.81235519739861,
+   "winkler_vs_aci": 2.224088787081332,
+   "pareto": true
+  },
+  "risk+pid0.05": {
+   "cover": 0.9000367323875504,
+   "cover_harm": 0.8699969812372284,
+   "width": 7.6493992483836655,
+   "winkler": 21.367142003155905,
+   "winkler_vs_aci": 4.395196057989958,
+   "pareto": false
+  },
+  "pid0.1": {
+   "cover": 0.9002489745692345,
+   "cover_harm": 0.8820826108943794,
+   "width": 7.470061080896251,
+   "winkler": 20.96923664648885,
+   "winkler_vs_aci": 4.31334739265054,
+   "pareto": true
+  },
+  "risk+pid0.1": {
+   "cover": 0.9003101350009435,
+   "cover_harm": 0.8888341899395216,
+   "width": 15.395702554990002,
+   "winkler": 41.815878502404836,
+   "winkler_vs_aci": 8.601477180617385,
+   "pareto": true
+  },
+  "dtaci": {
+   "cover": 0.8474646704314654,
+   "cover_harm": 0.7157125312196834,
+   "width": 1.1240342451972587,
+   "winkler": 4.9186787605285645,
+   "winkler_vs_aci": 1.0117664541004614,
+   "pareto": false
+  },
+  "risk+dtaci": {
+   "cover": 0.8440782405532165,
+   "cover_harm": 0.7384084669845398,
+   "width": 3.0597170684292245,
+   "winkler": 9.987688064575195,
+   "winkler_vs_aci": 2.0544557247464628,
+   "pareto": false
+  },
+  "bayes_hl48": {
+   "cover": 0.8837913604516107,
+   "cover_harm": 0.7493548362127685,
+   "width": 1.0615446435582017,
+   "winkler": 4.3812055587768555,
+   "winkler_vs_aci": 0.9012088466644532,
+   "pareto": true
+  },
+  "bayes_hl168": {
+   "cover": 0.8943873536330226,
+   "cover_harm": 0.760551091914876,
+   "width": 1.1107075601039493,
+   "winkler": 4.362864017486572,
+   "winkler_vs_aci": 0.8974360131257139,
+   "pareto": true
+  },
+  "bayes_hl672": {
+   "cover": 0.9069163261295119,
+   "cover_harm": 0.7689095816046401,
+   "width": 1.174024153091608,
+   "winkler": 4.378277778625488,
+   "winkler_vs_aci": 0.9006066057200138,
+   "pareto": true
+  }
+ },
+ "gate_bound": {
+  "A": {
+   "realised_oracle_vs_avg_pct": 0.407,
+   "realised_oracle_vs_best_static_pct": -0.091,
+   "r2_of_m": 0.6089
+  },
+  "B": {
+   "realised_oracle_vs_avg_pct": 0.373,
+   "realised_oracle_vs_best_static_pct": -0.069,
+   "r2_of_m": 0.4718
+  },
+  "C": {
+   "realised_oracle_vs_avg_pct": 1.823,
+   "realised_oracle_vs_best_static_pct": 0.085,
+   "r2_of_m": 0.3381
+  }
+ }
+}

@@ -1,0 +1,8 @@
+
+ECL H24 s2: target coverage 90 %
+  method     cover  cover@harm  width/split  winkler
+  split      0.833  0.674       1.000       3.705
+  risk       0.894  0.824       1.475       2.266
+  split_aci  0.897  0.843       1.229       3.435
+  risk_aci   0.900  0.867       1.657       2.385
+  bayes      0.905  0.833       1.505       2.255

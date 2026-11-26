@@ -1,0 +1,13 @@
+{
+ "data": "Weather",
+ "seed": 1,
+ "H": 24,
+ "H7": {
+  "cov_gain": 0.018,
+  "cov_gain_lower95": 0.009,
+  "winkler_ratio": 2.075700044631958,
+  "winkler_upper95": 2.3814,
+  "coverage_ok": true,
+  "width_ok": false
+ }
+}

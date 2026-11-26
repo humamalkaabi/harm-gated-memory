@@ -1,0 +1,13 @@
+{
+ "data": "ETTh2",
+ "seed": 2,
+ "H": 24,
+ "H7": {
+  "cov_gain": 0.131,
+  "cov_gain_lower95": 0.043,
+  "winkler_ratio": 0.9610999822616577,
+  "winkler_upper95": 1.0749,
+  "coverage_ok": true,
+  "width_ok": false
+ }
+}

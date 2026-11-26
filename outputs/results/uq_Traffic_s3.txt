@@ -1,0 +1,8 @@
+
+Traffic H24 s3: target coverage 90 %
+  method     cover  cover@harm  width/split  winkler
+  split      0.849  0.789       1.000       2.813
+  risk       0.889  0.861       1.243       2.590
+  split_aci  0.894  0.865       1.396       2.757
+  risk_aci   0.900  0.879       1.532       2.774
+  bayes      0.928  0.900       1.658       2.647

@@ -16,3 +16,5 @@ outputs/results/*.tmp
 checkpoints/gdn/
 checkpoints/ttt/
 checkpoints/*_mem_mlp_*.pt
+outputs/**/logs/
+outputs/**/results_backup/

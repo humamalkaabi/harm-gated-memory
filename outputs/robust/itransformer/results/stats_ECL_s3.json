@@ -1,0 +1,13 @@
+{
+ "data": "ECL",
+ "seed": 3,
+ "H": 24,
+ "H7": {
+  "cov_gain": 0.024,
+  "cov_gain_lower95": 0.018,
+  "winkler_ratio": 0.6926000118255615,
+  "winkler_upper95": 0.7067,
+  "coverage_ok": true,
+  "width_ok": true
+ }
+}

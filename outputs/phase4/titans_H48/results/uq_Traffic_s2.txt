@@ -1,0 +1,8 @@
+
+Traffic H48 s2: target coverage 90 %
+  method     cover  cover@harm  width/split  winkler
+  split      0.845  0.780       1.000       2.912
+  risk       0.888  0.855       1.259       2.678
+  split_aci  0.895  0.862       1.550       2.965
+  risk_aci   0.900  0.876       1.803       3.100
+  bayes      0.927  0.895       1.677       2.736

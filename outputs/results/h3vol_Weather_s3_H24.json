@@ -1,0 +1,37 @@
+{
+ "data": "Weather",
+ "seed": 3,
+ "H": 24,
+ "rows": {
+  "vol_only": {
+   "cover": 0.8976,
+   "cover_h3_168": 0.8618,
+   "width": 1735.6731,
+   "winkler": 3472.03491
+  },
+  "vol_aci": {
+   "cover": 0.9,
+   "cover_h3_168": 0.8636,
+   "width": 17703.24219,
+   "winkler": 35407.21094
+  },
+  "vol_aci_rob": {
+   "cover": 0.9002,
+   "cover_h3_168": 0.8427,
+   "width": 17700.23242,
+   "winkler": 35401.28906
+  },
+  "aci": {
+   "cover": 0.9005,
+   "cover_h3_168": 0.8095,
+   "width": 1.09781,
+   "winkler": 3.24378
+  },
+  "risk_aci": {
+   "cover": 0.9,
+   "cover_h3_168": 0.8237,
+   "width": 2.5628,
+   "winkler": 6.1325
+  }
+ }
+}

@@ -1,0 +1,61 @@
+{
+ "data": "Weather",
+ "seed": 2,
+ "H": 24,
+ "pairs": {
+  "P_A": {
+   "spearman_risk_utility_median": 0.318,
+   "spearman_risk_utility_iqr": [
+    0.141,
+    0.365
+   ],
+   "utility_at_harm_minus_other_median": 0.00493,
+   "share_variates_utility_higher_at_harm": 0.571,
+   "mse_rel_to_P_pct": {
+    "P": 0.0,
+    "X": -9.303,
+    "avg": -8.018,
+    "v_gate": -7.677,
+    "harm_trigger": -7.967,
+    "deployable_static": -8.018,
+    "best_static_hindsight": -9.303
+   }
+  },
+  "P_B": {
+   "spearman_risk_utility_median": 0.223,
+   "spearman_risk_utility_iqr": [
+    0.089,
+    0.332
+   ],
+   "utility_at_harm_minus_other_median": 0.00867,
+   "share_variates_utility_higher_at_harm": 0.619,
+   "mse_rel_to_P_pct": {
+    "P": 0.0,
+    "X": -8.927,
+    "avg": -7.683,
+    "v_gate": -7.292,
+    "harm_trigger": -7.44,
+    "deployable_static": -7.683,
+    "best_static_hindsight": -8.927
+   }
+  },
+  "P_C": {
+   "spearman_risk_utility_median": 0.097,
+   "spearman_risk_utility_iqr": [
+    0.004,
+    0.209
+   ],
+   "utility_at_harm_minus_other_median": 0.02989,
+   "share_variates_utility_higher_at_harm": 0.762,
+   "mse_rel_to_P_pct": {
+    "P": 0.0,
+    "X": -6.876,
+    "avg": -7.687,
+    "v_gate": -7.243,
+    "harm_trigger": -5.795,
+    "deployable_static": 0.0,
+    "best_static_hindsight": -7.687
+   }
+  }
+ }
+}

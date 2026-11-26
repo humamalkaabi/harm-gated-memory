@@ -1,0 +1,347 @@
+{
+ "data": "WeatherClean",
+ "seed": 2,
+ "H": 24,
+ "variants": {
+  "q80_registered": {
+   "risk": [
+    0.829,
+    0.761,
+    0.879
+   ],
+   "err_day": [
+    0.749,
+    0.68,
+    0.804
+   ],
+   "risk_minus_err_day": [
+    0.08,
+    0.05
+   ],
+   "surprise": [
+    0.539,
+    0.495,
+    0.599
+   ],
+   "risk_minus_surprise": [
+    0.29,
+    0.193
+   ],
+   "novelty": [
+    0.376,
+    0.328,
+    0.426
+   ],
+   "risk_minus_novelty": [
+    0.453,
+    0.369
+   ]
+  },
+  "q80_all": {
+   "risk": [
+    0.681,
+    0.608,
+    0.742
+   ],
+   "err_day": [
+    0.653,
+    0.588,
+    0.702
+   ],
+   "risk_minus_err_day": [
+    0.028,
+    -0.0
+   ],
+   "surprise": [
+    0.556,
+    0.519,
+    0.589
+   ],
+   "risk_minus_surprise": [
+    0.124,
+    0.042
+   ],
+   "novelty": [
+    0.454,
+    0.412,
+    0.5
+   ],
+   "risk_minus_novelty": [
+    0.226,
+    0.122
+   ]
+  },
+  "q80_lowchange": {
+   "risk": [
+    0.706,
+    0.633,
+    0.788
+   ],
+   "err_day": [
+    0.695,
+    0.631,
+    0.761
+   ],
+   "risk_minus_err_day": [
+    0.011,
+    -0.031
+   ],
+   "surprise": [
+    0.598,
+    0.551,
+    0.641
+   ],
+   "risk_minus_surprise": [
+    0.108,
+    0.018
+   ],
+   "novelty": [
+    0.463,
+    0.405,
+    0.522
+   ],
+   "risk_minus_novelty": [
+    0.242,
+    0.13
+   ]
+  },
+  "q90_registered": {
+   "risk": [
+    0.836,
+    0.773,
+    0.883
+   ],
+   "err_day": [
+    0.747,
+    0.682,
+    0.802
+   ],
+   "risk_minus_err_day": [
+    0.088,
+    0.053
+   ],
+   "surprise": [
+    0.55,
+    0.499,
+    0.61
+   ],
+   "risk_minus_surprise": [
+    0.286,
+    0.197
+   ],
+   "novelty": [
+    0.377,
+    0.33,
+    0.438
+   ],
+   "risk_minus_novelty": [
+    0.458,
+    0.365
+   ]
+  },
+  "q90_all": {
+   "risk": [
+    0.679,
+    0.603,
+    0.738
+   ],
+   "err_day": [
+    0.638,
+    0.579,
+    0.683
+   ],
+   "risk_minus_err_day": [
+    0.041,
+    0.002
+   ],
+   "surprise": [
+    0.56,
+    0.525,
+    0.597
+   ],
+   "risk_minus_surprise": [
+    0.119,
+    0.036
+   ],
+   "novelty": [
+    0.462,
+    0.417,
+    0.51
+   ],
+   "risk_minus_novelty": [
+    0.217,
+    0.108
+   ]
+  },
+  "q90_lowchange": {
+   "risk": [
+    0.716,
+    0.64,
+    0.792
+   ],
+   "err_day": [
+    0.695,
+    0.631,
+    0.755
+   ],
+   "risk_minus_err_day": [
+    0.022,
+    -0.025
+   ],
+   "surprise": [
+    0.607,
+    0.553,
+    0.651
+   ],
+   "risk_minus_surprise": [
+    0.109,
+    0.016
+   ],
+   "novelty": [
+    0.467,
+    0.406,
+    0.529
+   ],
+   "risk_minus_novelty": [
+    0.25,
+    0.129
+   ]
+  },
+  "q95_registered": {
+   "risk": [
+    0.824,
+    0.752,
+    0.881
+   ],
+   "err_day": [
+    0.734,
+    0.667,
+    0.793
+   ],
+   "risk_minus_err_day": [
+    0.09,
+    0.043
+   ],
+   "surprise": [
+    0.538,
+    0.468,
+    0.605
+   ],
+   "risk_minus_surprise": [
+    0.286,
+    0.178
+   ],
+   "novelty": [
+    0.356,
+    0.289,
+    0.419
+   ],
+   "risk_minus_novelty": [
+    0.468,
+    0.357
+   ]
+  },
+  "q95_all": {
+   "risk": [
+    0.665,
+    0.581,
+    0.742
+   ],
+   "err_day": [
+    0.616,
+    0.537,
+    0.679
+   ],
+   "risk_minus_err_day": [
+    0.049,
+    -0.002
+   ],
+   "surprise": [
+    0.55,
+    0.488,
+    0.615
+   ],
+   "risk_minus_surprise": [
+    0.115,
+    0.029
+   ],
+   "novelty": [
+    0.436,
+    0.367,
+    0.513
+   ],
+   "risk_minus_novelty": [
+    0.229,
+    0.089
+   ]
+  },
+  "q95_lowchange": {
+   "risk": [
+    0.712,
+    0.606,
+    0.811
+   ],
+   "err_day": [
+    0.682,
+    0.598,
+    0.752
+   ],
+   "risk_minus_err_day": [
+    0.03,
+    -0.032
+   ],
+   "surprise": [
+    0.607,
+    0.538,
+    0.67
+   ],
+   "risk_minus_surprise": [
+    0.105,
+    -0.02
+   ],
+   "novelty": [
+    0.438,
+    0.337,
+    0.53
+   ],
+   "risk_minus_novelty": [
+    0.274,
+    0.098
+   ]
+  }
+ },
+ "spearman": {
+  "risk": [
+   0.456,
+   0.344,
+   0.545
+  ],
+  "err_day": [
+   0.397,
+   0.301,
+   0.474
+  ],
+  "risk_minus_err_day": [
+   0.059,
+   0.018
+  ],
+  "surprise": [
+   0.096,
+   0.038,
+   0.153
+  ],
+  "risk_minus_surprise": [
+   0.36,
+   0.224
+  ],
+  "novelty": [
+   -0.156,
+   -0.216,
+   -0.085
+  ],
+  "risk_minus_novelty": [
+   0.612,
+   0.451
+  ]
+ }
+}

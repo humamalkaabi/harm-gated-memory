@@ -1,0 +1,17 @@
+{
+ "data": "WeatherClean",
+ "seed": 2,
+ "H": 24,
+ "H7": {
+  "cov_gain": 0.013,
+  "cov_gain_lower95": 0.007,
+  "winkler_ratio": 1.704699993133545,
+  "winkler_upper95": 1.9277,
+  "coverage_ok": true,
+  "width_ok": false,
+  "cov_gain_lower975": 0.006,
+  "winkler_upper975": 1.9722,
+  "coverage_ok975": true,
+  "width_ok975": false
+ }
+}

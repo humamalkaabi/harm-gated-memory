@@ -1,0 +1,8 @@
+
+Weather H24 s1: target coverage 90 %
+  method     cover  cover@harm  width/split  winkler
+  split      0.839  0.653       1.000       3.294
+  risk       0.897  0.796       1.260       2.891
+  split_aci  0.900  0.808       1.529       3.233
+  risk_aci   0.900  0.823       3.353       5.806
+  bayes      0.907  0.807       1.360       2.951

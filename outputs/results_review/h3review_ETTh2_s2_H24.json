@@ -1,0 +1,71 @@
+{
+ "data": "ETTh2",
+ "seed": 2,
+ "H": 24,
+ "alpha_matched": 0.07585,
+ "rows": {
+  "split": {
+   "cover": 0.8843,
+   "width": 1.1682,
+   "winkler": 4.75556,
+   "cover_h3_168": 0.7156,
+   "cover_h1_week": 0.7156
+  },
+  "risk_only": {
+   "cover": 0.889,
+   "width": 1.40149,
+   "winkler": 4.55004,
+   "cover_h3_168": 0.8157,
+   "cover_h1_week": 0.8157
+  },
+  "bayes": {
+   "cover": 0.9078,
+   "width": 1.45669,
+   "winkler": 4.51118,
+   "cover_h3_168": 0.8293,
+   "cover_h1_week": 0.8293
+  },
+  "aci": {
+   "cover": 0.8991,
+   "width": 1.28834,
+   "winkler": 4.47818,
+   "cover_h3_168": 0.8019,
+   "cover_h1_week": 0.8019
+  },
+  "risk_aci": {
+   "cover": 0.8995,
+   "width": 1.45778,
+   "winkler": 4.55973,
+   "cover_h3_168": 0.8615,
+   "cover_h1_week": 0.8615
+  },
+  "aci_width_matched": {
+   "cover": 0.9233,
+   "width": 1.45759,
+   "winkler": 4.55853,
+   "cover_h3_168": 0.83,
+   "cover_h1_week": 0.83
+  },
+  "pid": {
+   "cover": 0.8995,
+   "width": 1.57903,
+   "winkler": 4.7875,
+   "cover_h3_168": 0.85,
+   "cover_h1_week": 0.85
+  },
+  "pid_scorecaster": {
+   "cover": 0.8996,
+   "width": 1.63548,
+   "winkler": 4.84846,
+   "cover_h3_168": 0.8571,
+   "cover_h1_week": 0.8571
+  },
+  "risk_pid": {
+   "cover": 0.8997,
+   "width": 1.98097,
+   "winkler": 5.44934,
+   "cover_h3_168": 0.8684,
+   "cover_h1_week": 0.8684
+  }
+ }
+}

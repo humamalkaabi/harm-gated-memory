@@ -1,0 +1,8 @@
+
+Traffic H96 s3: target coverage 90 %
+  method     cover  cover@harm  width/split  winkler
+  split      0.842  0.770       1.000       2.985
+  risk       0.887  0.847       1.269       2.737
+  split_aci  0.895  0.858       1.741       3.179
+  risk_aci   0.900  0.873       2.145       3.465
+  bayes      0.926  0.888       1.685       2.788

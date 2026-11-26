@@ -1,0 +1,37 @@
+{
+ "data": "ETTm1",
+ "seed": 3,
+ "H": 24,
+ "rows": {
+  "vol_only": {
+   "cover": 0.891,
+   "cover_h3_168": 0.8287,
+   "width": 1.38317,
+   "winkler": 3.86103
+  },
+  "vol_aci": {
+   "cover": 0.9001,
+   "cover_h3_168": 0.8653,
+   "width": 2.61655,
+   "winkler": 6.07911
+  },
+  "vol_aci_rob": {
+   "cover": 0.9007,
+   "cover_h3_168": 0.8564,
+   "width": 1.3502,
+   "winkler": 3.568
+  },
+  "aci": {
+   "cover": 0.9002,
+   "cover_h3_168": 0.8557,
+   "width": 0.98007,
+   "winkler": 2.88314
+  },
+  "risk_aci": {
+   "cover": 0.9005,
+   "cover_h3_168": 0.8645,
+   "width": 1.08292,
+   "winkler": 3.05215
+  }
+ }
+}

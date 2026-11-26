@@ -1,0 +1,71 @@
+{
+ "data": "Weather",
+ "seed": 2,
+ "H": 24,
+ "alpha_matched": 0.00507,
+ "rows": {
+  "split": {
+   "cover": 0.8411,
+   "width": 0.71617,
+   "winkler": 3.27569,
+   "cover_h3_168": 0.6474,
+   "cover_h1_week": 0.7436
+  },
+  "risk_only": {
+   "cover": 0.8968,
+   "width": 0.89568,
+   "winkler": 2.88592,
+   "cover_h3_168": 0.7889,
+   "cover_h1_week": 0.8704
+  },
+  "bayes": {
+   "cover": 0.9074,
+   "width": 0.97105,
+   "winkler": 2.94231,
+   "cover_h3_168": 0.8015,
+   "cover_h1_week": 0.8821
+  },
+  "aci": {
+   "cover": 0.9005,
+   "width": 1.09027,
+   "winkler": 3.22155,
+   "cover_h3_168": 0.8047,
+   "cover_h1_week": 0.8756
+  },
+  "risk_aci": {
+   "cover": 0.9,
+   "width": 2.57029,
+   "winkler": 6.1427,
+   "cover_h3_168": 0.8194,
+   "cover_h1_week": 0.8808
+  },
+  "aci_width_matched": {
+   "cover": 0.9926,
+   "width": 2.56981,
+   "winkler": 5.32876,
+   "cover_h3_168": 0.9598,
+   "cover_h1_week": 0.9775
+  },
+  "pid": {
+   "cover": 0.9,
+   "width": 1.28492,
+   "winkler": 3.5288,
+   "cover_h3_168": 0.829,
+   "cover_h1_week": 0.8828
+  },
+  "pid_scorecaster": {
+   "cover": 0.9,
+   "width": 1.31753,
+   "winkler": 3.57856,
+   "cover_h3_168": 0.8353,
+   "cover_h1_week": 0.8853
+  },
+  "risk_pid": {
+   "cover": 0.9,
+   "width": 1.67129,
+   "winkler": 4.23111,
+   "cover_h3_168": 0.85,
+   "cover_h1_week": 0.8898
+  }
+ }
+}

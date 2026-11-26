@@ -1,0 +1,8 @@
+
+ETTm2 H24 s3: target coverage 90 %
+  method     cover  cover@harm  width/split  winkler
+  split      0.873  0.742       1.000       3.019
+  risk       0.907  0.857       1.142       2.798
+  split_aci  0.900  0.834       1.106       2.937
+  risk_aci   0.900  0.852       1.163       2.964
+  bayes      0.906  0.852       1.132       2.789

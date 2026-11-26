@@ -1,0 +1,37 @@
+{
+ "data": "Traffic",
+ "seed": 3,
+ "H": 24,
+ "rows": {
+  "vol_only": {
+   "cover": 0.8566,
+   "cover_h3_168": 0.8082,
+   "width": 0.65278,
+   "winkler": 2.87579
+  },
+  "vol_aci": {
+   "cover": 0.8976,
+   "cover_h3_168": 0.8721,
+   "width": 0.98328,
+   "winkler": 3.14835
+  },
+  "vol_aci_rob": {
+   "cover": 0.8968,
+   "cover_h3_168": 0.8699,
+   "width": 0.76412,
+   "winkler": 2.78742
+  },
+  "aci": {
+   "cover": 0.8943,
+   "cover_h3_168": 0.8655,
+   "width": 0.7015,
+   "winkler": 2.75655
+  },
+  "risk_aci": {
+   "cover": 0.8997,
+   "cover_h3_168": 0.8788,
+   "width": 0.76995,
+   "winkler": 2.77358
+  }
+ }
+}

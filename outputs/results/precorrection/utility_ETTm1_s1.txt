@@ -1,0 +1,28 @@
+
+ETTm1 H24 s1  reference PROCEED MSE 0.4726
+  standalone A: -4.46%
+  standalone B: -4.72%
+  standalone C: +17.66%
+  predictability P vs A, W= 24: Spearman +0.045  sign-AUROC 0.522  (future share X better 0.49)
+  predictability P vs A, W=168: Spearman +0.043  sign-AUROC 0.520  (future share X better 0.52)
+  predictability P vs B, W= 24: Spearman +0.029  sign-AUROC 0.511  (future share X better 0.50)
+  predictability P vs B, W=168: Spearman +0.015  sign-AUROC 0.504  (future share X better 0.53)
+  predictability P vs C, W= 24: Spearman +0.010  sign-AUROC 0.499  (future share X better 0.41)
+  predictability P vs C, W=168: Spearman +0.029  sign-AUROC 0.499  (future share X better 0.37)
+  avg(P,A)           -4.53%   (deployed share of X nan)
+  hedge(P,A)         -4.82%   (deployed share of X nan)
+  bayes_sw(P,A)      -2.17%   (deployed share of X 0.19)
+  bayes_mix(P,A)     -3.75%   (deployed share of X 0.54)
+  lcb(P,A)           -1.54%   (deployed share of X 0.27)
+  avg(P,B)           -4.74%   (deployed share of X nan)
+  hedge(P,B)         -4.91%   (deployed share of X nan)
+  bayes_sw(P,B)      -2.00%   (deployed share of X 0.18)
+  bayes_mix(P,B)     -3.82%   (deployed share of X 0.55)
+  lcb(P,B)           -1.74%   (deployed share of X 0.26)
+  avg(P,C)           +2.53%   (deployed share of X nan)
+  hedge(P,C)         -0.74%   (deployed share of X nan)
+  bayes_sw(P,C)      +1.71%   (deployed share of X 0.09)
+  bayes_mix(P,C)     +2.12%   (deployed share of X 0.39)
+  lcb(P,C)           -0.16%   (deployed share of X 0.12)
+  hedge(all)         -5.22%   (deployed share of X nan)
+  avg(P,A,B)         -5.26%   (deployed share of X nan)

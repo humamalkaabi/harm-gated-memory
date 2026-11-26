@@ -1,0 +1,41 @@
+
+Traffic H96 s3  reference PROCEED MSE 0.4079
+  standalone A: +2.76%
+  standalone B: +2.43%
+  standalone C: +2.54%
+  predictability P vs A, W= 24: Spearman +0.033  sign-AUROC 0.517  (future share X better 0.38)
+  predictability P vs A, W=168: Spearman +0.065  sign-AUROC 0.532  (future share X better 0.32)
+  predictability P vs B, W= 24: Spearman +0.037  sign-AUROC 0.518  (future share X better 0.39)
+  predictability P vs B, W=168: Spearman +0.059  sign-AUROC 0.528  (future share X better 0.34)
+  predictability P vs C, W= 24: Spearman +0.079  sign-AUROC 0.537  (future share X better 0.42)
+  predictability P vs C, W=168: Spearman +0.019  sign-AUROC 0.505  (future share X better 0.40)
+
+Traffic H96 s3  reference PROCEED MSE 0.4079
+
+Traffic H96 s3  reference PROCEED MSE 0.4079
+  standalone A: +2.76%
+  standalone B: +2.43%
+  standalone C: +2.54%
+  predictability P vs A, W= 24: Spearman +0.033  sign-AUROC 0.517  (future share X better 0.38)
+  predictability P vs A, W=168: Spearman +0.065  sign-AUROC 0.532  (future share X better 0.32)
+  predictability P vs B, W= 24: Spearman +0.037  sign-AUROC 0.518  (future share X better 0.39)
+  predictability P vs B, W=168: Spearman +0.059  sign-AUROC 0.528  (future share X better 0.34)
+  predictability P vs C, W= 24: Spearman +0.079  sign-AUROC 0.537  (future share X better 0.42)
+  predictability P vs C, W=168: Spearman +0.019  sign-AUROC 0.505  (future share X better 0.40)
+  avg(P,A)           +0.22%   (deployed share of X nan)
+  hedge(P,A)         +0.08%   (deployed share of X nan)
+  bayes_sw(P,A)      +0.12%   (deployed share of X 0.06)
+  bayes_mix(P,A)     +0.08%   (deployed share of X 0.29)
+  lcb(P,A)           +0.18%   (deployed share of X 0.13)
+  avg(P,B)           -0.02%   (deployed share of X nan)
+  hedge(P,B)         +0.02%   (deployed share of X nan)
+  bayes_sw(P,B)      +0.09%   (deployed share of X 0.07)
+  bayes_mix(P,B)     -0.05%   (deployed share of X 0.32)
+  lcb(P,B)           +0.16%   (deployed share of X 0.14)
+  avg(P,C)           -0.17%   (deployed share of X nan)
+  hedge(P,C)         +0.04%   (deployed share of X nan)
+  bayes_sw(P,C)      +0.13%   (deployed share of X 0.11)
+  bayes_mix(P,C)     -0.03%   (deployed share of X 0.37)
+  lcb(P,C)           +0.19%   (deployed share of X 0.19)
+  hedge(all)         +0.05%   (deployed share of X nan)
+  avg(P,A,B)         +0.61%   (deployed share of X nan)
